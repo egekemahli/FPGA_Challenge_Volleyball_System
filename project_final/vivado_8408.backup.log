@@ -1,0 +1,476 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec 23 23:43:10 2018
+# Process ID: 8408
+# Current directory: C:/Users/ege3b/project_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9824 C:\Users\ege3b\project_final\project_final.xpr
+# Log file: C:/Users/ege3b/project_final/vivado.log
+# Journal file: C:/Users/ege3b/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ege3b/project_final/project_final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 896.660 ; gain = 192.445
+update_compile_order -fileset sources_1
+close [ open C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd w ]
+add_files C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: LDRsensor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1022.285 ; gain = 96.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'LDRsensor' (1#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1064.875 ; gain = 139.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1064.875 ; gain = 139.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1064.875 ; gain = 139.418
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'swit1'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swit1'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swit2'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swit2'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swit3'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swit3'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swit4'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swit4'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[0]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[0]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[1]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[1]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[2]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[2]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[3]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[3]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[4]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[4]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[5]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[5]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[6]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEGMENTS[6]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[0]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[0]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[1]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[1]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[2]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[2]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[3]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_SEC[3]'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRin'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRin'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRin2'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRin2'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRin3'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRin3'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TRIGGER'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TRIGGER'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ECHO'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ECHO'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vin'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vin'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRres1'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRres1'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRres2'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRres2'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRres3'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LDRres3'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VRout'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VRout'. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1380.879 ; gain = 455.422
+6 Infos, 53 Warnings, 53 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1380.879 ; gain = 455.422
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1397.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:19]
+INFO: [Synth 8-3491] module 'decooder' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/decoder.vhd:5' bound to instance 'decode' of component 'decooder' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'decooder' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/decoder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'decooder' (1#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/decoder.vhd:10]
+INFO: [Synth 8-3491] module 'LDRsensor' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:5' bound to instance 'ldrsen' of component 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'LDRsensor' (2#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:12]
+INFO: [Synth 8-3491] module 'LDRsensor' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:5' bound to instance 'ldrsen2' of component 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:54]
+INFO: [Synth 8-3491] module 'LDRsensor' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:5' bound to instance 'ldrsen3' of component 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:55]
+WARNING: [Synth 8-5640] Port 'rin' is missing in component declaration [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:32]
+INFO: [Synth 8-3491] module 'VibrationRange' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/VibrationRange.vhd:5' bound to instance 'vibran' of component 'VibrationRange' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'VibrationRange' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/VibrationRange.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'VibrationRange' (3#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/VibrationRange.vhd:13]
+INFO: [Synth 8-3491] module 'RangeOnly' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:10' bound to instance 'rangesen' of component 'RangeOnly' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'RangeOnly' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:17]
+WARNING: [Synth 8-6014] Unused sequential element digit_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element santimetre_birler_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element santimetre_onlar_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element out_birler_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element out_onlar_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'RangeOnly' (4#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'sensor' (5#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:19]
+WARNING: [Synth 8-3331] design VibrationRange has unconnected port Rin
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1432.539 ; gain = 34.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1432.539 ; gain = 34.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1432.539 ; gain = 34.586
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1432.539 ; gain = 34.586
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 24 00:11:26 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/synth_1/runme.log
+[Mon Dec 24 00:11:26 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A285CDA
+set_property PROGRAM.FILE {C:/Users/ege3b/project_final/project_final.runs/impl_1/sensor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/project_final/project_final.runs/impl_1/sensor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 24 00:30:22 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/project_final/project_final.runs/impl_1/sensor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 24 00:38:27 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/synth_1/runme.log
+[Mon Dec 24 00:38:27 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/project_final/project_final.runs/impl_1/sensor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 24 00:44:18 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/synth_1/runme.log
+[Mon Dec 24 00:44:18 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2679.484 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2679.484 ; gain = 624.637
+INFO: [Common 17-344] 'open_run' was cancelled
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2679.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:19]
+INFO: [Synth 8-3491] module 'decooder' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/decoder.vhd:5' bound to instance 'decode' of component 'decooder' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'decooder' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/decoder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'decooder' (1#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/decoder.vhd:10]
+INFO: [Synth 8-3491] module 'LDRsensor' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:5' bound to instance 'ldrsen' of component 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'LDRsensor' (2#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:12]
+INFO: [Synth 8-3491] module 'LDRsensor' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:5' bound to instance 'ldrsen2' of component 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:54]
+INFO: [Synth 8-3491] module 'LDRsensor' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/LDRsensor.vhd:5' bound to instance 'ldrsen3' of component 'LDRsensor' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:55]
+WARNING: [Synth 8-5640] Port 'rin' is missing in component declaration [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:32]
+INFO: [Synth 8-3491] module 'VibrationRange' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/VibrationRange.vhd:5' bound to instance 'vibran' of component 'VibrationRange' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'VibrationRange' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/VibrationRange.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'VibrationRange' (3#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/VibrationRange.vhd:13]
+INFO: [Synth 8-3491] module 'RangeOnly' declared at 'C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:10' bound to instance 'rangesen' of component 'RangeOnly' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'RangeOnly' [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:17]
+WARNING: [Synth 8-6014] Unused sequential element digit_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element santimetre_birler_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element santimetre_onlar_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element out_birler_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element out_onlar_reg was removed.  [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'RangeOnly' (4#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/RangeOnly.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'sensor' (5#1) [C:/Users/ege3b/project_final/project_final.srcs/sources_1/new/TopModule.vhd:19]
+WARNING: [Synth 8-3331] design VibrationRange has unconnected port clk
+WARNING: [Synth 8-3331] design VibrationRange has unconnected port Rin
+WARNING: [Synth 8-3331] design VibrationRange has unconnected port resetswit
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2679.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2679.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2679.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/ege3b/project_final/project_final.srcs/constrs_1/new/cons.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2709.734 ; gain = 30.250
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/project_final/project_final.runs/impl_1/sensor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 24 00:59:23 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/synth_1/runme.log
+[Mon Dec 24 00:59:23 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/project_final/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/project_final/project_final.runs/impl_1/sensor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 24 01:04:59 2018...
